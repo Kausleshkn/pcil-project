@@ -1,0 +1,137 @@
+header {
+    background-color: #f1f0f0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.menu-left {
+    position: relative;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-left li {
+    margin-right: 20px;
+}
+
+.menu-left a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contact-btn {
+    background-color: #04274c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    background-color: #04274c;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    list-style: none;
+    /* padding: 20rem; */
+    width: 100%;
+    /* height: 100px; */
+    position: fixed;
+    z-index: 5;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-btn-mobile{
+    background-color: #04274c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-btn-mobile:hover {
+    background-color: #04274c;
+}
+
+.toggle-btn {
+    display: none;
+    cursor: pointer;
+    margin-top: 2.5px;
+}
+
+.bar1,
+.bar2,
+.bar3,
+.bar4 {
+    width: 32px;
+    height: 4px;
+    background-color: #070000;
+    margin-top: 4.5px;
+    transition: transform 0.4s;
+}
+
+.active .bar1 {
+    transform: translate(0, 20px) rotate(-45deg);
+}
+
+.active .bar2 {
+    opacity: 0;
+}
+
+.active .bar3 {
+    opacity: 0;
+}
+
+.active .bar4 {
+    transform: translate(0px, -4.5px) rotate(45deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    /* nav {
+        width: 100%;
+        height: 500px;
+    } */
+
+    .menu-left {
+        display: none;
+    }
+
+    .logo {
+        text-align: center;
+        align-self: flex-start;
+    }
+
+    .contact-btn {
+        display: none;
+    }
+
+    .toggle-btn{
+        display: block;
+    }
+}

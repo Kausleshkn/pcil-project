@@ -1,0 +1,40 @@
+.slide-content {
+    position: relative;
+}
+
+.slide-image {
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+}
+
+.slide-overlay {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    /* top: 50%;
+    left: 20%;
+    transform: translate(-50%, -80%); */
+    top: 20px; /* Space from the top */
+    left: 20px; /* Space from the left */
+    text-align: left;
+    /* text-align: center; */
+    color: white;
+    background-color: #77707080;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.slide-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slide-button:hover {
+    background-color: #0056b3;
+}

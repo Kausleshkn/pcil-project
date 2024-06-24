@@ -1,0 +1,56 @@
+.mission-vision-section {
+    padding: 60px 0;
+    background: #fff;
+}
+ 
+.section-title h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.mission-vision-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mission, .vision {
+    flex: 1;
+    min-width: 300px;
+    background: #eaeaea;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.mission h2, .vision h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #04274c;
+}
+
+.mission p, .vision p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .mission-vision-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title h1 {
+        font-size: 2em;
+    }
+
+    .mission h2, .vision h2 {
+        font-size: 1.5em;
+    }
+
+    .mission p, .vision p {
+        font-size: 1em;
+    }
+}

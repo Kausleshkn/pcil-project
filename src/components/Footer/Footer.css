@@ -1,0 +1,86 @@
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.about .logo {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 0.9em;
+    color: #000000;
+    line-height: 1.8;
+}
+
+.contact {
+    margin-bottom: 10px;
+}
+
+.contact span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.socials {
+    margin-top: 10px;
+}
+
+.socials a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    font-size: 1.2em;
+    color: #000000;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.socials a:hover {
+    background-color: #777;
+} 
+ 
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+  color: white;
+    background-color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8em;
+}
