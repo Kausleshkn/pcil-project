@@ -28,11 +28,6 @@ nav {
     font-weight: bold;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 .contact-btn {
     background-color: #04274c;
     color: white;
@@ -47,14 +42,16 @@ nav {
 }
 
 .mobile-menu {
+    padding: 20px;
+    top: 6rem;
+    background: white;
+    left: 0;
+    position: fixed !important;
     display: flex;
     flex-direction: column;
     gap:2rem;
     list-style: none;
-    /* padding: 20rem; */
     width: 100%;
-    /* height: 100px; */
-    position: fixed;
     z-index: 5;
 }
 

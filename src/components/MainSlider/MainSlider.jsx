@@ -18,11 +18,11 @@ const MainSlider = () => {
      
      <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
+        spaceBetween={0}
         slidesPerView={1}
         navigation
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
+        pagination={{ clickable: true  }}
+        scrollbar={{ draggable: false,  }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
       >
@@ -32,9 +32,9 @@ const MainSlider = () => {
         <div className="slide-content">
             <img src={banner1} alt="Slide 1" className="slide-image" />
             <div className="slide-overlay">
-              <h2>Slide 1 Heading</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia odio sequi placeat quaerat sed deserunt quis cumque soluta magni?</p>
-              <button className="slide-button">Click Me</button>
+            <h2>ELECTRICAL SOLUTIONS</h2>
+              <p>We manufacture switchboards and control panels with conventional as well as intelligent protection, control and communication. Accompanied with cost-effective design or retrofit systems tailored as per your needs and requirements.</p>
+              <button className="slide-button">Contact Us</button>
             </div>
           </div>
           
@@ -45,9 +45,9 @@ const MainSlider = () => {
         <div className="slide-content">
             <img src={banner2} alt="Slide 2" className="slide-image" />
             <div className="slide-overlay">
-              <h2>Slide 2 Heading</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, vitae voluptatibus? Ad sit quasi excepturi, soluta reiciendis quidem pariatur enim.</p>
-              <button className="slide-button">Click Me</button>
+              <h2>PROCESS INSTRUMENTATION </h2>
+              <p>For the past 25 years PACIFIC CONTROL has been working as a pivotal organization in design & development, Erection and commissioning of wide range of Field Instruments With a wide range of experience in instrumentation, PCIPL has worked as consultant, designer, and supplier for instruments in various industries: -</p>
+              <button className="slide-button">Contact Us</button>
             </div>
           </div>
           

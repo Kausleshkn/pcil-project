@@ -1,7 +1,6 @@
 .intro {
     background-color: #fff;
-    padding: 50px 20px;
-    margin-top: 20px;
+    padding: 50px 50px;
 }
 
 .intro-content {
@@ -13,6 +12,7 @@
 .intro-text {
     flex: 1;
     padding-right: 20px;
+    text-align: justify;
 }
 
 .intro-text h2 {
@@ -38,6 +38,7 @@
     display: block;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
 }
 
 @media (max-width: 768px) {

@@ -1,56 +1,77 @@
 .mission-vision-section {
-    padding: 60px 0;
+    padding: 2.5rem 10px;
     background: #fff;
 }
- 
+
 .section-title h1 {
     text-align: center;
-    margin-bottom: 40px;
     font-size: 2.5em;
     color: #333;
 }
 
 .mission-vision-content {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1rem;
 }
 
-.mission, .vision {
-    flex: 1;
-    min-width: 300px;
-    background: #eaeaea;
-    padding: 20px;
-    border-radius: 8px;
+.mission-vision-content h2 {
+    text-align: start;
+    margin-left: 20px;
+    font-size: 2rem;
+    color: #333;
 }
 
-.mission h2, .vision h2 {
-    margin-bottom: 20px;
-    font-size: 1.8em;
-    color: #04274c;
+.mission {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.mission p, .vision p {
+.mission-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+
+.vision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.vision-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.mission p,
+.vision p {
     font-size: 1.1em;
     color: #555;
 }
 
-@media (max-width: 768px) {
-    .mission-vision-content {
-        flex-direction: column;
-    }
+.mission-image img,
+.vision-image img {
+    border-radius: 8px;
 }
 
-@media (max-width: 480px) {
-    .section-title h1 {
-        font-size: 2em;
+
+
+@media (max-width: 768px) {
+    .mission {
+        flex-direction: column;
     }
 
-    .mission h2, .vision h2 {
-        font-size: 1.5em;
-    }
+    .vision {
+        flex-direction: column-reverse;
 
-    .mission p, .vision p {
-        font-size: 1em;
     }
 }

@@ -5,6 +5,7 @@ import IntroSection from './components/IntroSection/IntroSection';
 import MissionVisionSection from './components/MissionVisionSection/MissionVisionSection';
 import OurBusinessSection from './components/OurBusinessSection/OurBusinessSection';
 import BusinessPortfolioSection from './components/BusinessPortfolioSection/BusinessPortfolioSection';
+import OtherComponent from './components/OtherComponent/OtherComponent';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <MissionVisionSection />
       <OurBusinessSection />
       <BusinessPortfolioSection />
+      <OtherComponent />
       <Footer />
     </div>
   );

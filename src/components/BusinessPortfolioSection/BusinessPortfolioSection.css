@@ -1,12 +1,10 @@
 .business-portfolio-section {
-    padding: 60px 0;
+    padding: 10px 0;
     background: #fff;
 }
 
-
 .section-title {
     text-align: center;
-    margin-bottom: 40px;
 }
 
 .section-title h1 {
@@ -17,29 +15,23 @@
 .portfolio-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-between;
 }
 
 .portfolio-item {
     flex: 1;
-    min-width: 300px;
+    max-width: 290px;
     background: #eaeaea;
     padding: 20px;
     border-radius: 8px;
-    text-align: center;
+    border: 1px solid grey;
+    text-align: justify;
 }
 
-.portfolio-item h2 {
-    font-size: 1.8em;
-    color: #007BFF;
-    margin-bottom: 20px;
-}
-
-.portfolio-item p {
-    font-size: 1.1em;
-    color: #555;
-    text-align: left;
+.portfolio-item h4 {
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .portfolio-item ul {
@@ -48,41 +40,31 @@
 }
 
 .portfolio-item ul li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    color: #555;
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #007BFF;
 }
 
 .portfolio-item ul ul {
     margin-left: 20px;
-    list-style-type: disc;
 }
 
 .portfolio-item ul ul li {
     margin-bottom: 5px;
-    font-size: 1em;
+    font-size: 0.8rem;
+    list-style-type: disc;
 }
+
+/* .swiper-button-next,
+.swiper-button-prev {
+  display: none;
+} */
+
+
 
 @media (max-width: 768px) {
     .portfolio-content {
         flex-direction: column;
-    }
-}
-
-@media (max-width: 480px) {
-    .section-title h1 {
-        font-size: 2em;
-    }
-
-    .portfolio-item h2 {
-        font-size: 1.5em;
-    }
-
-    .portfolio-item p {
-        font-size: 1em;
-    }
-
-    .portfolio-item ul li, .portfolio-item ul ul li {
-        font-size: 0.9em;
     }
 }
