@@ -4,8 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
-
+ 
 const Footer = () => (
+
+
+
   <footer className="footer">
     <div className="container">
       <div className="footer-content">
@@ -55,6 +58,9 @@ const Footer = () => (
       &copy; 2024 Pacific Control. All rights reserved.
     </div>
   </footer>
+
+
+
 );
 
 export default Footer;

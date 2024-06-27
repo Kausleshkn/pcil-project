@@ -1,9 +1,9 @@
 .footer {
-    background-color: #ffffff;
     color: #000000;
-    padding: 50px 0;
+    padding: 10px 0;
+    border-top: 1px solid #c1c5c999;
 }
-
+ 
 .container {
     width: 90%;
     margin: 0 auto;
@@ -22,7 +22,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .about {
@@ -62,25 +61,37 @@
 
 .footer-bottom {
     color: white;
-    background-color: #000000;
+    background-color: #04274c;
     padding: 10px 0;
     text-align: center;
     font-size: 0.8rem;
+}
+
+.footer-section h2{
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+
+.footer-section li{
+    font-size: 13px;
+    padding-bottom: 5px;
 }
 
 /* Responsive */
 
 @media (max-width: 768px) {
 
+   
     .footer-content {
+        padding: 10px;
         flex-direction: column;
         flex-wrap: wrap;
         gap: 1.5rem;
+        align-items: start;
+
     }
 
     .about{
-        justify-content: center;
-        align-items: center;
     }
 
     .about p {

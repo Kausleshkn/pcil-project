@@ -7,27 +7,43 @@
     /* min-height: 400; */
     min-height: 400px;
 }
-
+ 
 .slide-overlay {
     width: 40%;
-    height: auto;
+    height: 300px;
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 25%;
     transform: translate(-50%, -50%);
     text-align: left;
-    color: white;
-    background-color: #00000067;
+    color: black;
+    background-color: #fffefe8f;
     border-radius: 10px;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.c_box{
+    padding: 30px;
+}
+.c_box h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.c_box p{
+    font-size: 20px;
+    padding-bottom: 10px;
 }
 
-.slide-overlay h2 {
-    font-size: 1.5rem;
+.blur_bg_layer{
+    filter: blur(5px);
 }
+
+ 
 
 .slide-overlay p {
     font-size: 1rem;
@@ -35,13 +51,14 @@
 
 .slide-button {
     margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
+    padding: 15px;
+    background-color: #04274c;
     border: none;
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    width: 115px;
+    width: 200px;
+    font-size: 15px;
 }
 
 .slide-button:hover {
@@ -52,21 +69,49 @@
     display: none !important;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff; /* Change this to your desired color */
+}
+
+.swiper-button-next:after{
+  color: #04274c;
+}
+.swiper-button-prev:after{
+    color: #04274c;
+}
 @media (max-width: 768px) {
+ 
+    .hide_small{
+        display: none;
+    }
+
     .slide-overlay {
-        width: 80%;
+        width: 70%;
         height: auto;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        text-align: left;
         color: white;
         background-color: #00000067;
         border-radius: 10px;
-        padding: 20px;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        text-align: center;
     }
+
+    .c_box h2{
+  font-size: 20px;
+    }
+    .c_box p{
+        font-size: 13px;
+          }
+          .slide-button{
+            font-size: 12px;
+          }
+  
+    
 }

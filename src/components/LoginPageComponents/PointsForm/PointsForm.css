@@ -1,0 +1,108 @@
+
+.points-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  
+  .points-form {
+    background-color: #d4c3c3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .points-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+  }
+  
+  .form-control label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .point-item label{
+    display: block;
+  }
+  
+  .form-control input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .points-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .point-item {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+  }
+  
+  .point-item input[type="text"] {
+    flex: 1;
+  }
+  
+  .add-point {
+    width: 30px;
+    height: 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  
+  .add-point:hover {
+    background-color: #0056b3;
+  }
+  
+  .remove-point {
+    width: 30px;
+    height: 30px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .remove-point:hover {
+    background-color: #c82333;
+  }
+  
+  .points-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .points-form button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  

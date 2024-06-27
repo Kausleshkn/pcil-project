@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 
-
+ 
 const MainSlider = () => {
 
   return (
@@ -28,15 +28,27 @@ const MainSlider = () => {
       >
         <SwiperSlide>
           
-          
-        <div className="slide-content">
+           
+           <div className="slide-content">
             <img src={banner1} alt="Slide 1" className="slide-image" />
-            <div className="slide-overlay">
-            <h2>ELECTRICAL SOLUTIONS</h2>
-              <p>We manufacture switchboards and control panels with conventional as well as intelligent protection, control and communication. Accompanied with cost-effective design or retrofit systems tailored as per your needs and requirements.</p>
+
+             <div className="slide-overlay">
+
+          <div className='c_box' >
+          <h2>ELECTRICAL SOLUTIONS</h2>
+              <p>We manufacture switchboards and control panels with conventional as well as intelligent protection
+                <span className='hide_small' >
+                ,control and communication. Accompanied with cost-effective design or retrofit systems tailored as per your needs and requirements.
+                </span>
+              </p>
               <button className="slide-button">Contact Us</button>
-            </div>
           </div>
+
+            </div>
+
+
+          </div>
+     
           
           
           </SwiperSlide>
@@ -45,10 +57,12 @@ const MainSlider = () => {
         <div className="slide-content">
             <img src={banner2} alt="Slide 2" className="slide-image" />
             <div className="slide-overlay">
+            <div className='c_box' >
               <h2>PROCESS INSTRUMENTATION </h2>
-              <p>For the past 25 years PACIFIC CONTROL has been working as a pivotal organization in design & development, Erection and commissioning of wide range of Field Instruments With a wide range of experience in instrumentation, PCIPL has worked as consultant, designer, and supplier for instruments in various industries: -</p>
+              <p>For the past 25 years PACIFIC CONTROL has been working as a pivotal organization in design & development<span className='hide_small' >, Erection and commissioning of wide range of Field Instruments With a wide range of experience in instrumentation, PCIPL has ..</span></p>
               <button className="slide-button">Contact Us</button>
-            </div>
+              </div>
+            </div>  
           </div>
           
           </SwiperSlide>

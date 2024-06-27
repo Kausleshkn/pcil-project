@@ -1,12 +1,14 @@
 import './OurBusinessSection.css';
-
+  
 const OurBusinessSection = () => (
+
+
   <section className="our-business-section" style={{ marginTop: '-5rem' }}>
     <div className="container">
       <div className="section-title">
         <h1>Our Business</h1>
         <p>Discover how we are leading the industry and delivering exceptional value to our clients.</p>
-      </div>
+      </div> 
       <div className="business-content">
         <div className="business-item">
           <p>
@@ -16,6 +18,8 @@ const OurBusinessSection = () => (
       </div>
     </div>
   </section>
-);
+
+  
+); 
 
 export default OurBusinessSection;

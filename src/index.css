@@ -13,10 +13,43 @@
   font-style: normal;
 }
 
-
 body {
   display: flex;
   flex-direction: column;
   width: 100%;
   min-height: 100dvh;
+  overflow-x: hidden;
 }
+
+.fx_center{
+  display: flex;
+  justify-content: center;
+}
+
+.text_content_box{
+  border: 2px solid #04274c85;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.f30 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+ 
+.fx_right{
+  display: flex;
+  justify-content: end;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  display: none;
+}
+.clientList-section{
+  display: none;
+}
+ 
+
+ 
+

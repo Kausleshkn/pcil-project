@@ -1,0 +1,85 @@
+.processControl-section {
+    padding: 50px 0;
+    background: #fff;
+}
+
+.processControl-title {
+    text-align: center;
+}
+
+.processControl-title h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.processControl-content {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.processControl-items {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.processControl-image {
+    flex: 1;
+}
+
+.processControl-image img {
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.processControl-points {
+    flex: 1;
+}
+
+.processControl-points ul {
+    font-size: 1rem;
+    line-height: 2rem; 
+}
+.processControl-text{
+    border: 2px solid #04274c85;
+    padding: 30px;
+    border-radius: 30px;
+    margin-bottom: 100px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} 
+.processControl-text p{
+    max-width: 1000px;
+}
+.f30{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+
+    .processControl-title h1 {
+        font-size: 25px;
+    }
+
+    .processControl-items {
+        display: block;
+    }
+
+     
+    .processControl-image img {
+box-shadow: none;
+margin-bottom: 50px;
+    }
+    .processControl-points ul{
+        padding-left: 45px;
+    }
+
+}

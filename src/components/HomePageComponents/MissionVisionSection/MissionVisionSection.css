@@ -2,7 +2,7 @@
     padding: 2.5rem 10px;
     background: #fff;
 }
-
+ 
 .section-title h1 {
     text-align: center;
     font-size: 2.5em;
@@ -10,12 +10,10 @@
 }
 
 .mission-vision-content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
-
+ 
 .mission-vision-content h2 {
     text-align: start;
     margin-left: 20px;
@@ -29,6 +27,7 @@
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
+    padding: 50px;
 }
 
 .mission-text {
@@ -44,6 +43,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    padding: 50px;
 }
 
 .vision-text {
@@ -54,24 +54,47 @@
 
 .mission p,
 .vision p {
-    font-size: 1.1em;
+    margin-top: -0.5rem;
+    font-size: 0.9em;
     color: #555;
 }
 
 .mission-image img,
 .vision-image img {
     border-radius: 8px;
+    width: 150px;
 }
 
 
 
 @media (max-width: 768px) {
+
+
     .mission {
         flex-direction: column;
+        padding: 0;
     }
-
+ 
     .vision {
         flex-direction: column-reverse;
 
     }
+
+    .mission-vision-content {
+        display: block;
+    }
+    .mission{
+        border-bottom: 2px solid #04274c5e;
+    }
+    .vision{
+        padding: 0;
+        padding-top: 30px;
+    }
+    .mission-text{
+        text-align: center;
+    }
+    .vision-text{
+        text-align: center;
+    }
+    
 }
